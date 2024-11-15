@@ -1,0 +1,215 @@
+@font-face {
+  font-family: 'Futura Bk BT';
+  src: url('../fonts/FuturaBT-Book.eot');
+  src: url('../fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FuturaBT-Book.woff2') format('woff2'),
+    url('../fonts/FuturaBT-Book.woff') format('woff'),
+    url('../fonts/FuturaBT-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+
+
+.masthead .max-width{
+    max-width: 700px;
+    margin: auto;
+
+}
+
+
+
+
+#mainNav .navbar-brand {
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Futura Bk BT';
+
+
+}
+
+
+.navbar_custom_bg {
+  background: #161635;
+}
+
+
+.toggle-bg {
+  background: #aad8dd;
+}
+
+
+
+
+
+.img-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+.img-box img {
+  position: absolute;
+  right: 10%;
+  bottom: -80px;
+  cursor: pointer;
+  transition: bottom 0.5s, left 1s;
+  -webkit-transition: bottom 0.5s, left 1s;
+  -moz-transition: bottom 0.5s, left 1s;
+  -ms-transition: bottom 0.5s, left 1s;
+  -o-transition: bottom 0.5s, left 1s;
+  border-radius: 10px;
+  outline: 10px solid #000;
+}
+
+
+
+.img-box:hover .back-img {
+  bottom: -60px;
+}
+
+
+.img-box1 img {
+  position: absolute;
+  left: 40%;
+  bottom: -60px;
+  cursor: pointer;
+  transition: bottom 0.5s, left 1s;
+  -webkit-transition: bottom 0.5s, left 1s;
+  -moz-transition: bottom 0.5s, left 1s;
+  -ms-transition: bottom 0.5s, left 1s;
+  -o-transition: bottom 0.5s, left 1s;
+}
+
+
+
+
+.img-box1:hover .front-img {
+  left: 42%;
+}
+
+
+
+
+#fms {
+  background: #edebeb;
+
+}
+
+
+.svg_box {
+  height: 60px;
+  margin-top: 30px;
+
+}
+
+
+.features_bg {
+  background: url(../assets/Features-bg.jpg) no-repeat;
+  object-fit: cover;
+  background-size: cover;
+}
+
+/* .features_bg_headin{
+        min-height: 80px;
+    } */
+
+.dct_section {
+  display: block;
+}
+
+.dct_section h2 {
+  color: #2c2b69;
+}
+
+.data_tools_bg {
+  background: url(../assets/data-tools-bg.jpg) no-repeat right;
+  background-size: cover;
+}
+
+
+.contact_bg {
+  background: url(../assets/contact_bg.jpg) no-repeat;
+  background-size: cover;
+
+}
+
+
+#contactForm .form-control {
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #fff !important;
+  border-radius: 0px !important;
+  color: #fff !important;
+  font-weight: 400 !important;
+  outline: none !important;
+  font-family: 'Futura Bk BT';
+
+
+}
+
+#contactForm textarea {
+  resize: none;
+}
+
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #fff;
+  color: #333;
+}
+
+.copyright {
+  background-color: #1a252f;
+}
+
+.privacy-policy p{
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 27px;
+}
+
+.privacy-policy p span{
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .masthead .max-width{
+    width: 100%;
+    margin: auto;
+
+}
+
+.img-box img {
+width: 150px;
+}
+
+.img-box1 img {
+
+  left: 25%;
+
+}
+
+
+
+}

@@ -1,0 +1,186 @@
+
+
+.custom_div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+
+.gallery,
+.overlay img {
+    user-select: none;
+}
+.gallery {
+    opacity: 0;
+    transition: opacity 0.25s linear 0.25s;
+}
+.gallery.uploaded {
+    opacity: 1;
+}
+.gallery:hover .gallery__figure:not(:hover) {
+    opacity: 0.3;
+}
+.gallery__item img{
+    height: 300px;
+    width: 100%;
+}
+
+
+
+
+.gallery__figure {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    animation: fade-in 1s;
+    transition: opacity 0.3s;
+}
+.gallery__figure,
+.gallery__open img {
+    border-radius: 5px;
+   
+}
+.gallery__img {
+    transition: all 0.3s;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    cursor: pointer;
+
+}
+/* .gallery__img:hover {
+    transform: scale(1.2);
+} */
+
+
+.gallery.grid {
+    display: grid;
+    gap: 0px;
+}
+
+.gallery.flex {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+
+
+  
+
+.overlay {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: auto 1fr auto;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s;
+    backdrop-filter: blur(3px);
+}
+.overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.overlay__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+
+.overlay button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    width: 3em;
+    height: 3em;
+
+}
+.overlay button i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+}
+.overlay :is(#next, #prev) {
+    position: absolute;
+    bottom: calc(50vh - 24px);
+}
+#next {
+    right: 0;
+}
+#gallery__exitfullscreen {
+    display: none;
+}
+
+
+.hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    text-align: center;
+    color: #000;
+}
+
+
+.overlay .leyend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+}
+.gallery__open {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery__open img {
+    max-height: calc(100vh - 96px);
+    max-width: 100%;
+   
+}
+.gallery__open img:hover ~ figcaption {
+    display: flex;
+}
+
+input[name="categories"] {
+    display: none;
+}
+[value="all"]:checked ~ #gallery .gallery__figure[data-category] {
+    display: block;
+}
+[value="Christmas"]:checked ~ #gallery .gallery__figure:not([data-category~="Christmas"]),
+[value="Anime"]:checked ~ #gallery .gallery__figure:not([data-category~="Anime"]),
+[value="Camping"]:checked ~ #gallery .gallery__figure:not([data-category~="Camping"]),
+[value="Wings"]:checked ~ #gallery .gallery__figure:not([data-category~="Wings"]) {
+    display: none;
+}
+[value="all"]:checked ~ .categories [for="all"],
+[value="Christmas"]:checked ~ .categories [for="Christmas"],
+[value="Anime"]:checked ~ .categories [for="Anime"],
+[value="Camping"]:checked ~ .categories [for="Camping"],
+[value="Wings"]:checked ~ .categories [for="Wings"] {
+    color: #1b95e0;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

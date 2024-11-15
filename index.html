@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Parsel</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+        <script src="https://kit.fontawesome.com/0ef6695f2c.js" crossorigin="anonymous"></script>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+        <link rel="stylesheet" href="css/photogallery.css">
+         <link href="css/styles.css" rel="stylesheet" />
+         <link href="css/global.css" rel="stylesheet" />
+         <link href="css/chat.css" rel="stylesheet" />
+        
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg  navbar_custom_bg fixed-top" id="mainNav">
+            <div class="container-fluid">
+                <a class="navbar-brand wow fadeIn" href="#page-top" data-wow-delay="0.1s"><img src="assets/logo.png" alt="logo"  class="me-2">Parsel</a>
+
+                <button class="navbar-toggler  font-weight-bold toggle-bg text-dark rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#home">Home</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#product">Product</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#features">Features</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#datatools">Data Tools</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-2 px-0 px-lg-3 rounded" data-bs-toggle="modal" href="#" data-bs-target="#privacypolicy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      
+        <header class="masthead  text-white text-center" id="home">
+            <div class="container d-flex align-items-center flex-column">
+                <h1 class="masthead-heading  mb-4 max-width wow fadeInUp" data-wow-delay="0.1s">Real Time Product Cycle Management</h1>
+                <p class=" h5 fw-light lh-base mb-5  max-width wow fadeInUp" data-wow-delay="0.2s">Parsel is a cloud based, scalable and secure platform focused on the complete SKU lifecycle (inventory, warehouse, dispatch & delivery) for businesses in diverse sectors. Easy to integrate, deploy and use, Parsel also implements Data driven tools to ensure efficiencies and savings. 
+                </p>
+     
+                <div class="position-relative bg-dark rounded-4 p-2 wow zoomIn" data-wow-delay="1s">
+                    
+                        <img src="assets/img-01.jpg"  alt="" class="img-fluid border border-dark border-5 rounded-4 " >
+                
+                        <div class="img-box wow zoomIn" data-wow-delay="1.5s"> 
+                            <img src="assets/mobile-screen.png"  alt="" class="img-fluid back-img">
+                            
+                        </div>
+
+                     <div class="img-box1">
+                        <a href="https://play.google.com/store/apps/details?id=com.parsel.parselexchange&pli=1" target="_blank"><img src="assets/Google_Play_Store_badge_EN.png"  alt="" class="img-fluid front-img"></a>
+                     </div>
+
+
+    
+                </div>
+
+
+            </div>
+
+        </header>
+
+        <!-- product Section-->
+        <section class="page-section portfolio" id="product">
+            <div class="container">
+                <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2> -->
+                <div class="custom_div ">
+                <div id="gallery" class="grid flex gallery wow fadeInUp animated" data-wow-delay="0.1s"></div>
+                <template id="template-card">
+           
+                  <figure class="gallery__item ">
+                    <img class="gallery__img"  loading="lazy"/>
+                    <figcaption class="gallery__title text-center p-2 bg-light fw-bold"></figcaption>
+                  </figure>
+              
+                </template>
+                
+                <div class="overlay hidden">
+            
+                  <div class="overlay__btns">
+                    <button id="gallery__fullscreen"><i class="fa fa-expand" aria-hidden="true"></i></button>
+                    <button id="gallery__close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                  </div>
+                  <figure class="gallery__open" id="open">
+                      <img src="" title="">
+                      <figcaption></figcaption>
+                  </figure>
+                  <p class="leyend"></p>
+            
+                  <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                  <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+        
+
+            </div>
+
+
+         
+              </div>
+
+        </section>
+
+
+
+        <section class="page-section  text-dark mb-0" id="fms">
+            <div class="container">
+                <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <h1 class="wow fadeInDown animated"  data-wow-duration="1s">Fleet Management Services</h1>
+                <p class="h5 fw-light wow fadeInDown animated"  data-wow-duration="1.5s">Centralized fleet management solution to monitor and maintain your fleet </p>
+               </div>  </div>
+
+                <div class="row my-3">
+                        <div class="col-lg-4 wow fadeInLeft animated" data-wow-delay="0.3s">
+                            <div class="svg_box">
+                                <svg width="10%"  data-bbox="10 37 179.999 126" viewBox="10 37 179.999 126"  xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                                <g>
+                                    <path d="M176.839 77.87h-4.258V53.822c0-2.116-1.742-3.848-3.871-3.848H95.161v-9.331c0-1.731-1.258-3.174-3-3.559-1.742-.384-3.484.578-4.161 2.213l-5.032 10.677H13.387A3.376 3.376 0 0 0 10 53.341v93.884c0 2.063 1.698 3.751 3.774 3.751h73.645v8.369c0 1.731 1.258 3.174 3 3.559.291.096.581.096.871.096 1.452 0 2.71-.77 3.387-2.116l4.742-9.908h69.387c2.076 0 3.774-1.688 3.774-3.751V123.08h4.258c7.269 0 13.161-5.857 13.161-13.082V90.664c.001-7.215-5.805-12.794-13.16-12.794zM17.742 144.243V56.708h61.742l-23.323 49.539a3.591 3.591 0 0 0 .194 3.559c.677 1.058 1.839 1.731 3.097 1.731H87.42v32.705H17.742zM91 103.842H65.355L87.42 57.093V92.01c0 2.275 1.873 4.136 4.161 4.136h25.645l-22.065 46.749v-34.918c0-2.274-1.872-4.135-4.161-4.135zm73.839 40.401h-62.032l23.613-50.308c.581-1.154.484-2.597-.194-3.655-.677-1.058-1.839-1.828-3.097-1.828H95.161V56.708h69.677v87.535zm12.193-27.896h-4.452V84.603h4.258c3.29 0 6.387 2.886 6.387 6.06v19.527c.001 3.386-2.786 6.157-6.193 6.157z" fill="#000" data-color="1"></path>
+                                </g>
+                            </svg>
+                            </div>
+
+                            <h3>Vehicle Tracking</h3>
+                            <p class="h5 fw-light">Real time location, battery SOC and fuel tracking with alerts</p>
+
+                        </div>
+
+
+                        <div class="col-lg-4 wow fadeInLeft animated" data-wow-delay="0.2s">
+                            <div class="svg_box">
+                                <svg width="10%"  data-bbox="33.499 33.501 133 132.999" viewBox="33.499 33.501 133 132.999"  xmlns="http://www.w3.org/2000/svg" data-type="shape" role="presentation" aria-hidden="true" aria-label="">
+                                    <g>
+                                        <path d="M162.635 59.085a3.971 3.971 0 0 0-6.425-1.17l-24.781 24.78c-1.009.988-2.646.987-3.627.029l-10.501-10.501a2.624 2.624 0 0 1 .037-3.692l24.744-24.742a3.968 3.968 0 0 0-1.17-6.424 43.467 43.467 0 0 0-35.832 0C84.1 46.858 74.302 71.051 82.34 92.298l-43.598 43.595c-6.991 6.99-6.991 18.365 0 25.356a17.813 17.813 0 0 0 12.679 5.251 17.81 17.81 0 0 0 12.678-5.252l43.599-43.596a43.47 43.47 0 0 0 33.263-1.065c21.829-9.877 31.553-35.672 21.674-57.502zm-24.949 50.269a35.53 35.53 0 0 1-29.283 0 3.971 3.971 0 0 0-4.445.81l-45.474 45.47a9.924 9.924 0 0 1-7.063 2.926 9.926 9.926 0 0 1-7.064-2.925c-3.895-3.895-3.895-10.232 0-14.127l45.474-45.471a3.968 3.968 0 0 0 .81-4.444c-8.073-17.84-.127-38.921 17.714-46.995a35.507 35.507 0 0 1 23.677-1.989l-20.299 20.297-.066.065-.038.038c-3.993 4.073-3.993 10.699.028 14.799l10.557 10.557c4.073 3.991 10.701 3.991 14.8-.029l20.377-20.376c4.339 16.448-3.702 34.154-19.705 41.394z" fill="#000"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <h3>Repairs and Maintenance</h3>
+                            <p class="h5 fw-light">Track and schedule your vehicle's maintenance and repairs</p>
+
+                        </div>
+
+                        <div class="col-lg-4 wow fadeInLeft animated" data-wow-delay="0.1s">
+                            <div class="svg_box">
+                                <svg width="10%" data-bbox="23.001 56 153.999 88" viewBox="23.001 56 153.999 88" xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                                    <g>
+                                        <path d="M177 59.996V100a4 4 0 0 1-8 0V69.688l-56.211 56.467a4.001 4.001 0 0 1-5.67 0L76.772 95.67l-46.937 47.152A3.989 3.989 0 0 1 27 144a4.001 4.001 0 0 1-2.835-6.822l49.772-50a4.001 4.001 0 0 1 5.67 0l30.347 30.485L163.374 64h-30.193a4 4 0 0 1 0-8H173c.049 0 .095.013.144.015.212.008.424.022.633.064.125.025.242.07.362.106.129.038.259.068.384.119.136.056.259.132.387.202.101.055.206.1.303.164.176.117.335.255.489.397.038.035.082.06.119.097l.004.005c.185.185.351.388.497.606.07.104.118.218.177.327.065.12.139.235.192.362.059.141.093.288.135.434.03.105.072.205.094.313.052.259.079.522.08.785z" fill="#000001" data-color="1"></path>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <h3>Performance History</h3>
+                            <p class="h5 fw-light">Track your vehicle's and driver's performance</p>     
+
+                        </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <section class="page-section features_bg  text-white mb-0" id="features">
+            <div class="container">
+                <div class="row">
+                    <h2 class="page-section-heading text-start text-white mb-3 wow fadeInDown animated" data-wow-duration="0.1s">Features</h2>
+                    <p class="h5 fw-light wow fadeInDown animated" data-wow-duration="1s">
+                        Easy to integrate APIs, easy to set up and deploy across the entire storage & logistics ecosystem 
+
+                    </p>
+                </div>
+
+
+                <div class="row my-3">
+                    <div class="col-lg-4 wow fadeInLeft animated" data-wow-duration="2s">
+                        <div class="svg_box">
+                            <svg width="8%"  preserveAspectRatio="xMidYMid meet" data-bbox="27 27.113 145.902 145.787" viewBox="27 27.113 145.902 145.787"  xmlns="http://www.w3.org/2000/svg" data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                                
+                                <g>
+                                    <path d="M159.8 124.9c-3.7 0-7.6 3.2-12.5 7.2-4.3 3.5-9.5 7.7-13.5 8.4-.1-2.3-1-4.3-2.4-6-5.1-5.8-16.4-5.4-23.8-5.2-1.2.1-2.2.1-3 .1-1.5 0-3.5-1.3-6.2-3-6.2-3.9-15.6-9.9-34.3-10.2-.3 0-.5.1-.8.1v-8.2c0-1.7-1.3-3-3-3H30c-1.7 0-3 1.3-3 3v54.2c0 1.7 1.3 3 3 3h30.2c1.7 0 3-1.3 3-3v-6.1c2.8.2 8.8 3.1 14.6 5.8 10.3 4.8 23.2 10.9 33.5 10.9 16.1 0 61.6-21.8 61.6-34.6.1-8.5-4.7-13.4-13.1-13.4zM57.2 159.4H33v-48.1h24.2v48.1zm54.2 7.7c-9 0-21.2-5.7-31-10.3-7.4-3.5-13.3-6.2-17.2-6.4v-28.2c.2.1.4.1.7.1 16.9.2 25.2 5.5 31.1 9.3 3.4 2.2 6.2 3.9 9.4 3.9.9 0 2-.1 3.2-.1 5.6-.2 15.8-.6 19.1 3.1.4.5 1 1.4 1 2.8H87.5c-1.7 0-3 1.3-3 3s1.3 3 3 3h42.3c.7 0 1.5-.3 2-.8 6.6.5 13.3-4.9 19.3-9.8 3-2.5 7.2-5.8 8.7-5.8 5 0 7.2 2.3 7.2 7.5 0 6.3-37.7 28.7-55.6 28.7zM106.2 91c4.8 0 8.8-3.9 8.8-8.8 0-4.8-4-8.8-8.8-8.8-4.8 0-8.8 3.9-8.8 8.8-.1 4.8 3.8 8.8 8.8 8.8zm0-14c2.9 0 5.3 2.3 5.3 5.3 0 2.9-2.3 5.3-5.3 5.3-2.9 0-5.3-2.3-5.3-5.3-.1-3 2.3-5.3 5.3-5.3zm-25.9 8.5h4.9c.6 3.9 2.3 7.4 4.8 10.3l-3.8 3.8c-.7.7-.7 1.8 0 2.5.4.4.8.5 1.2.5s.9-.1 1.2-.5l3.8-3.8c2.9 2.4 6.4 4.1 10.2 4.7v4.8c0 .9.5 1.8 1.5 1.8s1.5-.8 1.5-1.8v-4.5h.4c5.2 0 10-1.9 13.6-5l3.8 3.8c.4.4.8.5 1.2.5.4 0 .9-.1 1.2-.5.7-.7.7-1.8 0-2.5l-3.8-3.8c2.4-2.8 4.1-6.4 4.8-10.3h6.2c1 0 1.8-.5 1.8-1.5 0-.9-.8-1.5-1.8-1.5h-5.9v-.3c0-5.2-1.9-9.9-5-13.6l3.8-3.8c.7-.7.7-1.8 0-2.5s-1.8-.7-2.5 0l-3.8 3.8c-3.7-3.1-8.4-5-13.6-5h-.4V55c0-.9-.5-1.8-1.5-1.8s-1.5.8-1.5 1.8v6.4c-3.8.7-7.3 2.3-10.2 4.7l-3.8-3.8c-.7-.7-1.8-.7-2.5 0s-.7 1.8 0 2.5l3.8 3.8c-3.2 3.7-5 8.4-5 13.6v.3h-4.6c-1 0-1.8.5-1.8 1.5.1 1 .8 1.5 1.8 1.5zm25.9-20.8c9.8 0 17.7 7.9 17.7 17.5 0 9.7-7.9 17.6-17.7 17.6s-17.6-7.9-17.6-17.6c-.1-9.7 7.8-17.5 17.6-17.5zm32.1-11.4c1 .5 2 .7 3.1.7 2.6 0 5.1-1.5 6.2-3.8 1.7-3.4.3-7.6-3.1-9.3-1-.5-2-.7-3.1-.7-2.6 0-5.1 1.5-6.2 3.8-1.7 3.4-.3 7.6 3.1 9.3zm.1-7.7c.6-1.2 1.8-1.9 3.1-1.9.5 0 1 .1 1.5.4 1.7.8 2.3 2.8 1.5 4.5-.8 1.6-2.9 2.3-4.5 1.5-1.8-.8-2.5-2.9-1.6-4.5zM123 55c.2 0 .4 0 .6-.1l3.4-1.1c1.2 2.8 3.2 5 5.8 6.6v.1l-1.6 3.1c-.4.9-.1 1.9.8 2.3.2.1.5.2.8.2.7 0 1.2-.4 1.6-.9l1.5-3.1c1.8.7 3.6 1 5.5 1 1.2 0 2.3-.1 3.4-.4l1.1 3.4c.2.7 1 1.2 1.7 1.2.2 0 .4 0 .6-.1 1-.3 1.4-1.3 1.1-2.2l-1.1-3.3c2.7-1.2 5.1-3.2 6.7-5.8l3.2 1.5c.2.1.5.2.8.2.7 0 1.2-.4 1.6-.9.4-.9.1-1.9-.8-2.3l-3.2-1.5h-.1c1-2.8 1.2-5.8.7-8.8l3.4-1.1c1-.3 1.4-1.3 1.1-2.2-.3-.9-1.3-1.4-2.2-1.1l-3.4 1.1c-1.2-2.8-3.2-5-5.8-6.6l.1-.1 1.6-3.1c.4-.9.1-1.9-.8-2.3s-1.9-.1-2.3.8l-1.8 2.8c-1.8-.7-3.6-1-5.5-1-1.2 0-2.3.1-3.4.4l-1.1-3.4c-.3-.9-1.3-1.4-2.2-1.1-1 .3-1.4 1.3-1.1 2.2l1.1 3.3c-2.7 1.2-5.1 3.2-6.7 5.8l-3.2-1.5c-.9-.4-1.9-.1-2.3.8-.4.9-.1 1.9.8 2.3l3 1.6h.1c-1 2.8-1.2 5.8-.7 8.8l-3.4 1.1c-1 .3-1.4 1.3-1.1 2.2.3.7.9 1.2 1.7 1.2zm7.3-13.5c2.1-4.2 6.4-6.9 11.2-6.9 1.9 0 3.8.4 5.6 1.3 3 1.5 5.2 4 6.2 7.2s.8 6.5-.7 9.5c-2.1 4.2-6.4 6.9-11.2 6.9-1.9 0-3.8-.4-5.6-1.3-3-1.5-5.2-4-6.2-7.2-1.1-3.1-.8-6.5.7-9.5z" fill="#fff" data-color="1"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <h3 class="features_bg_headin">End to end Tracing & Tracking</h3>
+                        <p class="h5 fw-light">Across Inventory, Warehouse, Dispatch & Delivery</p>
+
+                    </div>
+
+
+                    <div class="col-lg-4 wow fadeInLeft animated" data-wow-duration="1.5s">
+                        <div class="svg_box">
+                            <svg width="8%" data-bbox="17.667 42.76 166.548 118.445" viewBox="17.667 42.76 166.548 118.445"  xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" data-type="tint" role="presentation" aria-hidden="true" aria-label="">
+                                <g>
+                                    <path fill="#FFFFFF" d="M84.167 139.331c0 10.77-8.73 19.5-19.5 19.5s-19.5-8.73-19.5-19.5 8.73-19.5 19.5-19.5 19.5 8.73 19.5 19.5z"></path>
+                                    <path fill="#FFFFFF" d="M166.01 143.993c1.757 7.545-2.935 15.085-10.479 16.843-7.544 1.757-15.085-2.934-16.842-10.478-1.758-7.545 2.934-15.085 10.478-16.843 7.544-1.757 15.085 2.934 16.842 10.478z"></path>
+                                    <path fill="#FFFFFF" d="M17.667 136.76h18.62a28.495 28.495 0 0 1 56.758 0h18.622v-94h-94z"></path>
+                                    <path fill="#FFFFFF" d="M120.486 73.031v63.729h14.325a20.456 20.456 0 0 1 35.079 0h14.325V73.031z"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <h3 class="features_bg_headin">Automated Route & Vehicle Optimisation</h3>
+                        <p class="h5 fw-light">Ensuring efficient dispatch, fleet/vendor utilisation and continuous tracking</p>
+
+                    </div>
+
+                    <div class="col-lg-4 wow fadeInLeft animated"  data-wow-duration="1s">
+                        <div class="svg_box">
+                            <svg width="8%" data-bbox="19.999 47.867 160.001 104.266" xmlns="http://www.w3.org/2000/svg"  viewBox="19.999 47.867 160.001 104.266" data-type="color" role="presentation" aria-hidden="true" aria-label="">
+                                <g>
+                                    <path fill="#EA6F66" d="M96.11 92.548l-22.382 47.439-.462.971-4.521 9.583h81.874a7.43 7.43 0 006.721-4.26l20.352-43.13c2.326-4.93-1.27-10.603-6.721-10.603H96.11z" data-color="1"></path>
+                                    <path fill="#2E3A48" d="M150.619 152.133H68.746a1.592 1.592 0 01-1.44-2.272l27.365-57.993a1.593 1.593 0 011.44-.913h74.86a8.98 8.98 0 017.621 4.193 8.978 8.978 0 01.539 8.682l-20.352 43.13a9.06 9.06 0 01-8.16 5.173zm-79.362-3.184h79.363a5.865 5.865 0 005.281-3.348l20.352-43.13a5.811 5.811 0 00-.349-5.618 5.81 5.81 0 00-4.932-2.713H97.119l-25.862 54.809z" data-color="2"></path>
+                                    <path d="M171.115 92.546l-22.382 47.439H62.149l22.382-47.439h86.584z" fill="#FFFFFF" data-color="3"></path>
+                                    <path fill="#2E3A48" d="M148.733 141.576H62.148a1.592 1.592 0 01-1.44-2.272L83.09 91.865a1.593 1.593 0 011.44-.913h86.584a1.592 1.592 0 011.44 2.272l-22.382 47.439a1.589 1.589 0 01-1.439.913zm-84.073-3.184h83.064l20.88-44.255H85.54l-20.88 44.255z" data-color="2"></path>
+                                    <path d="M157.6 99.425l-15.697 33.271H75.855l15.696-33.271H157.6z" fill="#FFFFFF" data-color="3"></path>
+                                    <path fill="#2E3A48" d="M141.903 134.288H75.855a1.592 1.592 0 01-1.44-2.272l15.696-33.271a1.593 1.593 0 011.44-.913H157.6a1.592 1.592 0 011.44 2.272l-15.697 33.271a1.593 1.593 0 01-1.44.913zm-63.537-3.184h62.528l14.195-30.087H92.56l-14.194 30.087z" data-color="2"></path>
+                                    <path fill="#FFFFFF" d="M62.899 49.459H88.81c15.205 0 27.53 12.326 27.53 27.53v43.523l-15.993-15.993H62.899c-15.204 0-27.53-12.326-27.53-27.53.001-15.205 12.326-27.53 27.53-27.53z" data-color="3"></path>
+                                    <path fill="#2E3A48" d="M116.341 122.104c-.415 0-.822-.162-1.126-.466l-15.527-15.526H62.9c-16.058 0-29.122-13.064-29.122-29.122S46.841 47.867 62.9 47.867h25.91c16.058 0 29.122 13.064 29.122 29.122v43.523a1.593 1.593 0 01-1.591 1.592zM62.9 51.051c-14.302 0-25.938 11.636-25.938 25.938s11.636 25.938 25.938 25.938h37.448c.422 0 .827.168 1.126.466l13.275 13.275v-39.68c0-14.302-11.636-25.938-25.938-25.938H62.9z" data-color="2"></path>
+                                    <path d="M97.472 76.819a3.926 3.926 0 11-7.852 0 3.926 3.926 0 017.852 0z" fill="#EA6F66" data-color="1"></path>
+                                    <path fill="#2E3A48" d="M93.546 82.336a5.524 5.524 0 01-5.518-5.518 5.524 5.524 0 015.518-5.518 5.524 5.524 0 015.518 5.518 5.525 5.525 0 01-5.518 5.518zm0-7.851c-1.287 0-2.334 1.047-2.334 2.334s1.047 2.334 2.334 2.334 2.334-1.047 2.334-2.334-1.048-2.334-2.334-2.334z" data-color="2"></path>
+                                    <path d="M79.781 76.819a3.926 3.926 0 11-7.852 0 3.926 3.926 0 017.852 0z" fill="#EA6F66" data-color="1"></path>
+                                    <path fill="#2E3A48" d="M75.855 82.336a5.524 5.524 0 01-5.518-5.518 5.524 5.524 0 015.518-5.518 5.524 5.524 0 015.518 5.518 5.525 5.525 0 01-5.518 5.518zm0-7.851c-1.287 0-2.334 1.047-2.334 2.334s1.047 2.334 2.334 2.334 2.334-1.047 2.334-2.334-1.048-2.334-2.334-2.334z" data-color="2"></path>
+                                    <path d="M62.09 76.819a3.926 3.926 0 11-7.852 0 3.926 3.926 0 017.852 0z" fill="#EA6F66" data-color="1"></path>
+                                    <path fill="#2E3A48" d="M58.164 82.336a5.524 5.524 0 01-5.517-5.518 5.524 5.524 0 015.517-5.518 5.524 5.524 0 015.518 5.518 5.525 5.525 0 01-5.518 5.518zm0-7.851c-1.287 0-2.333 1.047-2.333 2.334s1.046 2.334 2.333 2.334 2.334-1.047 2.334-2.334-1.048-2.334-2.334-2.334z" data-color="2"></path>
+                                    <path fill="#FFFFFF" d="M96.995 140.003l-2.32 4.922a9.79 9.79 0 01-8.856 5.616H28.987c-5.418 0-8.993-5.638-6.683-10.538h74.691z" data-color="3"></path>
+                                    <path fill="#2E3A48" d="M85.82 152.133H28.986c-3.092 0-5.928-1.559-7.584-4.171s-1.858-5.841-.54-8.638a1.591 1.591 0 011.44-.913h74.692a1.592 1.592 0 011.44 2.271l-2.32 4.922a11.424 11.424 0 01-10.294 6.529zm-62.418-10.538a5.763 5.763 0 00.689 4.662 5.767 5.767 0 004.895 2.692H85.82a8.232 8.232 0 007.416-4.703l1.25-2.652H23.402z" data-color="2"></path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <h3 class="features_bg_headin">Automated Fulfilment Tool</h3>
+                        <p class="h5 fw-light">Picklist generation, Worker Utilisation and Packing Assistance to multiply savings and eliminate redundancies</p>
+
+                        
+
+
+                    </div>
+
+
+            </div>
+
+    
+            </div>
+        </section>
+
+
+        <section class="page-section text-dark mb-0">
+            <div class="container dct_section ">
+                <div class="row">
+                  <div class="col-lg-4 pt-2 wow fadeInLeft animated" data-wow-duration="1s">
+                    <h2 class="page-section-heading text-start mb-3 lh-sm ">Dashboard Control Tower</h2>
+                    <div class="mt-5">
+                        <h6 class="mb-4">/01</h6>
+                        <h3>Picklist/Putaway List</h3>
+                        <ul class="fw-light mt-4">
+                            <li> Quick Master List Setup</li>
+                            <li>Dedicated Dashboard</li>
+                            <li>Real Time Data</li>
+                            <li>Reports & Updates</li>
+                            <li>For Managers & Controllers</li>
+                            <li>Ease of third party integrations </li>
+                        </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-8 wow zoomIn animated" >
+                    <img src="assets/desktop.png" alt="" class="img-fluid w-100">
+                  </div>                 
+               </div>  
+
+
+             <div class="row d-flex justify-content-between my-4 ">
+                <div class="col-lg-6 wow fadeInRight animated" data-wow-duration="1s">
+                  <div class="bg-dark rounded-5 p-3 ">
+                    <img src="assets/Parsel-Screen.png" alt="" class="img-fluid rounded-4">
+                  </div>
+                </div>
+
+                <div class="col-lg-4 order-first order-lg-last wow fadeInUp animated" data-wow-duration="1s">
+                    <div class="mt-5 px-lg-5">
+                        <h6 class="mb-4">/02</h6>
+                        <h3>Mobile App</h3>
+                     <ul class="fw-light mt-4">
+                       <li> Storage Optimisation</li>
+                       <li> Route Optimisation</li>
+                       <li> Real Time Tracking</li>
+                       <li> ePoD Confirmation</li>
+                       <li> For Workers & Drivers</li>
+                       <li> Scan QR/Bar Codes</li>
+                    
+                        </ul>
+                    </div>
+                </div>
+
+             </div>  
+            </div>
+        </section>
+
+
+        <section class="page-section data_tools_bg  text-white mb-0" id="datatools">
+            <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-5 mb-4 mb-lg-0 wow fadeInLeft animated" data-wow-duration="1s">
+                    <img src="assets/person-using-ai-tool-job1.jpg" alt="img" class="img-fluid rounded-4">
+                </div>
+                <div class="col-lg-5" >
+                    <h2 class="page-section-heading text-start text-white mb-5 wow fadeInUp animated" data-wow-duration="1s">Data Driven Tools</h2>
+                    <ul class="h5 fw-light px-5 wow fadeInUp animated" data-wow-duration="1s">
+                        <li class="mb-2">Automatic picklist/putaway list generation using an unique order processing methodology  </li>
+                        <li class="mb-2">Pick route optimisation to ensure unidirectional flow vehicle optimisation to ensure better fleet utilisation  </li>
+                        <li class="mb-2">Route optimisation to ensure better fleet optimisation </li>
+                        <li class="mb-2">Workforce optimisation to ensure higher productivity and cost saving</li>
+
+                        
+                        
+                       
+                    </ul>
+
+                </div>
+
+
+            </div>   
+     
+
+    
+            </div>
+        </section>    
+        <!-- Contact Section-->
+        <section class="page-section contact_bg" id="contact">
+            <div class="container">
+
+                <!-- Contact Section Form-->
+                <div class="row d-flex justify-content-between">
+
+                    <div class="col-lg-4 wow fadeIn animated"  data-wow-duration="1.5s">
+                        <h2 class="page-section-heading text-white  text-secondary mb-0">Request a Demo</h2>
+                    </div>
+
+
+
+                    <div class="col-lg-5 col-xl-5 wow fadeIn animated"  data-wow-duration="1.5s" >
+                       
+                        <form  id="contactForm">
+                            <div class="row g-3">
+                              <div class="col-md-6">
+                             
+                                <label for="your-name" class="form-label text-white fw-semibold">First Name *</label>
+                                <input type="text" class="form-control" id="your-name" name="your-name" required>
+                              </div>
+                              <div class="col-md-6">
+                                <label for="your-surname" class="form-label text-white fw-semibold">Last Name *</label>
+                                <input type="text" class="form-control" id="your-surname" name="your-surname" required>
+                              </div>
+                              <div class="col-md-12">
+                                <label for="your-email" class="form-label text-white fw-semibold">Your Email *</label>
+                                <input type="email" class="form-control" id="your-email" name="your-email" required>
+                              </div>
+                            
+                              <div class="col-12">
+                                <label for="your-message" class="form-label text-white fw-semibold">Leave us a message</label>
+                                <textarea class="form-control" id="your-message" name="your-message" rows="4" required></textarea>
+                              </div>
+                              <div class="col-12">
+                                <div class="row">
+                                  <div class="col-md-6 mt-2">
+                                    <button type="submit" class="btn btn-outline-light w-75 fw-normal" >Submit</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="container-fluid ">
+
+                <div class="row px-5 g-0 d-flex justify-content-between ">
+                <div class="col-lg-4 wow fadeIn animated">
+                    <img src="assets/Parsel_Logo_edited.png" alt="" class="mb-3">
+                </div>
+                <div class="col-lg-4 wow fadeIn animated">
+                 
+                    <a href="https://play.google.com/store/apps/details?id=com.parsel.parselexchange&pli=1" target="_blank"><img src="assets/Google_Play_Store_badge_EN.png"  alt="" class="mb-3"></a>
+
+                </div>
+                </div>
+                <div class="row g-0 px-5 d-flex justify-content-between ">
+                     <div class="col-lg-6 mb-5 mb-lg-0 wow fadeIn animated">
+                        <div class="row g-0">
+                           <div class="col-lg-3">
+                            <p class=" mb-0">
+                                Email: <a href="mailto:info@parsel.co.in" class="text-dark">info@parsel.co.in</a>
+                           </p>
+                           </div>
+
+                           <div class="col-lg-9">
+                            <p class=" mb-0 lh-base">
+                                D-Wing, Chanakya CHS,<br/> 
+                                Mahavir Nagar, New Link Rd, <br/>
+                                Kandivali West, Mumbai, <br/>
+                                 Maharashtra 400067
+                           </p>
+                           </div>
+
+
+                        </div>
+                  
+                    </div>
+                             
+                    <div class="col-lg-4 wow fadeIn animated">
+                        <p class="">
+                            © 2024 Copyright Parsel Exchange Pvt. Ltd. 
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </footer>
+
+
+         <div class="portfolio-modal modal fade " id="privacypolicy" tabindex="-1" aria-labelledby="privacypolicy" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen ">
+                <div class="modal-content privacy-policy">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body pb-5 ">
+                        <div class="container">
+                            <div class="row ">
+                                <div class="col-lg-12">
+                                    <h1 class="mb-5">Privacy Policy</h1>
+                                    <p>
+                                        The goal of this policy is to be transparent about what information Parsel collects, uses, and shares. It explains your rights with regards to that information, how to access and update your information, and how you can object to its use.
+                                    </p>
+
+                                    <p>When we refer to “Parsel”, “we”, or “us”, we mean “Parsel Exchange Private Limited”, a company registered in Mumbai, India. </p>
+                                    <p>When we make changes to our Privacy Policy, we will revise the date at the top of this page. We may also notify you via in-app messages or by mail.</p>
+
+                                    <h5>What information we collect and how we use it</h5>
+                                    <p>Parsel collects the following information about you when you provide it to us and use our services: </p>
+
+                                   <p>
+                                    <span class="d-block"> Account and Profile Information</span> 
+                                  When you sign up, create a profile, set your preferences, or pay for your subscription or courses, Parsel collects your name, username, password, email, address, professional background, and any profile pictures you choose to upload.
+                                  </p>
+
+                                  <p>
+                                    We use this information to correctly identify you, communicate with you, and provide you with customer support. We also use this contact information for accounting and administrative purposes, for transactional emails including app and billing notifications, and to notify you about new features, courses, and discounts that are appropriate for your learning needs.
+                                  </p>
+
+                                  <p>
+                                    <span class="d-block">User-generated Content</span>
+                                    As you learn on myLearn, you may upload the notes you make while learning, the choices you make on practice and diagnostic tests, and the questions and comments that you post on the forums. We store this content and may use it to notify you about new features, courses, and discounts that are appropriate for your learning needs.
+                                  </p>
+
+                                  <p>
+                                 <span class="d-block"> Device Information and Log Data</span> 
+                                    We collect information about the type of device you use to access Parsel, as well as your device settings, operating system, browser information, connection type, IP address, and the URLs of referring pages. We also log the date and time you access Parsel, as well as any error or crash data.
+                                  </p>
+
+                                  <p>
+                                    We store and use device and location information to help us optimize Parsel’s performance and improve the overall experience of Parsel. Your log data helps us gauge the effectiveness of our courses and improve the learning environment, troubleshoot errors, analyze performance, resolve reliability issues, perform security audits, and investigate potential service fraud or abuse.
+                                  </p>
+
+                                  <p>
+                                   <span class="d-block">Payment Information</span> 
+                                    Customers that purchase courses or subscriptions on Parsel provide us, or our payment processors, with billing details such as credit or debit card information, banking information, and billing addresses. When you purchase a subscription through one of our payment processors, we receive only partial information. Parsel does not store your credit or debit card or banking information on our servers. 
+                                 </p>
+
+                                 <p>
+                                    We use your payment information in order to fulfil, track, and manage your purchases.
+                                 </p>
+
+                                     <p>
+                                    <span class="d-block"> Service Metadata</span> 
+                                    This data is generated automatically, when you visit Parsel. It provides us with information about how you browse our website. That includes the links you click, the search terms you use, and the features you access.
+                                  </p>
+
+                                  <p>
+                                    We use this metadata to help us understand how our users learn, and what they find most valuable. We also use this information to measure the efficiency of our product, enhance our services, and guide our future development.
+                                  </p>
+
+                                  <p>
+                                    <span class="d-block">Support Information</span> 
+                                    The information you provide to our team, including any troubleshooting documentation or screen shots may be saved as part of your support history.                    
+                                  </p>
+
+                                  <p>
+                                    We use this information to resolve any issues you are having, relay feedback to our team, respond to your comments and requests, and confirm your purchases and refunds. We also use this data to provide you with security alerts and technical notices.
+                                  </p>
+
+                                  <p>
+                                    <span class="d-block">Cookie Information  </span> 
+                                    Parsel and our third-party advertising and analytics partners use cookies and similar technologies for tracking across different devices, websites and online services. 
+                                  </p>
+
+
+                                  <p>
+                                    We use this information both for secure authentication and for the maintenance of your active sessions. Our third-party partners use cookies for the purposes of marketing, ad targeting, and performance analytics.
+                                  </p>
+
+                                  <p>
+                                    <span class="d-block">Integrations and Linked Services</span> 
+                                    Parsel offers integrations with a number of third-party services. For instance, you can sign up and log into Parsel by using Google and other third-party authentication providers. 
+                                  </p>
+
+                                  <p>
+                                    Whenever you link to one of these third-party services, Parsel is authorised to connect and transfer information as specified by our agreement with that linked service. 
+                                 </p>                 
+                                 <p>
+                                    We use this information to authenticate, connect, or link your third-party accounts to Parsel. However, we do not receive or store passwords for any of these third-party services. 
+                                 </p>  
+                                 <p>
+                                    To understand what data may be shared with Parsel when you enable these integrations, please check the settings, permissions and privacy policies of these third-party services.
+                                 </p>       
+
+                                 <h5>How we share information</h5>
+                                 <p>
+                                   <span class="d-block">We do not Sell your Information</span>
+                                    We appreciate our users’ need for privacy. We will never sell information about you, your profile, the content you create on Parsel, to advertising companies or other third parties.
+                                 </p>
+                                                        
+                                 
+                                 <p>
+                                   <span class="d-block">Community and Forums</span>
+                                    Parsel offers forums. Any comments you contribute to these platforms may be read, collected, or used by any other user of the same forum. Your information may remain posted on these sites, even if your account is deleted at your request.
+                                 </p>
+                                 
+                                 <p>
+                                 <span class="d-block"> Testimonials and Case Studies</span> 
+                                  We might contact you with a request to provide information that would appear, as a testimonial or case study, on our website and our advertisements. In this case, we would seek explicit consent to use this information.
+                                 </p>
+                                 <p>
+                                   <span class="d-block">Social Media Links and Third-Party Widgets</span>
+                                    Some Parsel services include social media links and widgets. In order to function properly, these features may set a cookie that records the Parsel page from which you engaged them, as well as your IP address. These features may also link to other websites or services whose privacy policies differ from ours. As a result, any information you provide to them will be governed by their policies and not this one.
+                                 </p>
+                                  
+                                 <p>
+                                   <span class="d-block"> Legal Compliance and Fraud Prevention</span>
+                                    In exceptional circumstances, we may disclose information about you to a third party if we receive a request and believe that the disclosure is in accordance with or required by any applicable law, rule or regulation, legal process, or enforceable governmental request. We may also do so to enforce our Terms of Use, investigate potential violations, prevent and detect fraud, track and solve security or technical issues, and protect against any harm to the rights, property or safety of Parsel, its users, or the public as required or permitted by law.
+                                 </p>
+
+                                 <p>
+                                   <span class="d-block">Changes in Business</span>
+                                    If Parsel engages in a merger, acquisition, reorganization, bankruptcy, dissolution, sale of company assets, financing, public offering of securities, or due diligence and other steps in contemplation and negotiation of such activities, we may share or transfer information that we collect under this privacy policy, subject to standard confidentiality agreements.
+                                 </p>
+                                 
+                                 
+                                 
+                                 <h5>How we store, secure, and transfer information</h5>
+                                                                
+                                 <p>
+                                 <span class="d-block">  Third Party Service Providers</span>
+                                 
+                                    Parsel contracts with third party service providers. These services may require access to your information in order to help us operate, market, and support our services. For example, Parsel uses third party services to provide hosting, maintenance, backup, virtual computing, storage, payment processing, customer support, data analytics, advertising, marketing, and other services. Our contracts with these services provide for the maintenance, confidentiality, security, and integrity of the information we share with them.
+                                 </p>
+                                
+                                 <p>
+                               <span class="d-block">  Data Security</span>  
+                                 
+                                    Parsel implements the industry’s best data security practices and policies. We take all reasonable measures to protect your information, and to prevent any kind of unauthorized access, misuse, loss, or disclosure.
+                                 </p>
+                                  
+                                 
+                                 <p>
+                                    The third-party service providers that we use for infrastructure and payment processing adhere to the same privacy and security principles as we do.
+
+                                 </p>
+                                 
+                                  <p>
+                                    We conduct regular, manual and automated security audits. We also participate in voluntary penetration tests performed by third parties; these test are followed by concrete, internal security policy updates and actionable engineering items for our development team. When possible, your data is also stored in anonymised form.
+                                  </p>
+                                 
+                                  <p>
+                                    While no system is infallible, we strive to keep our systems secure and constantly updated.
+                                  </p>
+                                 
+                                 <p>
+                                <span class="d-block">  Data Retention</span> 
+                                 
+                                    Parsel stores your information for as long as your account is active, and for a reasonable period thereafter, in case you decide to use our services again. Parsel may also retain certain information for as long as necessary in order to support business operations, or as required by law.
+                                 </p>
+                                 
+
+                                 <p>
+                                 <span class="d-block"> International Data Transfers</span> 
+                                 
+                                    Parsel collects information internationally, and uses hosting and cloud computing infrastructure located primarily in India to transfer, process and store information. In order to provide you with our service, we may also transfer your data to third-party services. Please refer to the List of Data Sub-Processors for more information about why we use those third-party services, and where they are located.
+                                 </p>
+                                 
+                                <p>
+                                  <span class="d-block">Your data rights and choices</span> 
+                                 
+                                    The following is a summary of choices you can make to exercise your data rights:
+                                </p>   
+                      
+                                 
+                                 
+                                <p>
+                                  <span class="d-block">Opt Out of Promotional Communications</span> 
+                                 
+                                    You have the right to opt out of receiving any promotional communication. To unsubscribe from promotional emails, use the link at the bottom of the message. You can also contact us directly to have your information removed from our promotional contact list. Please note that, even if you unsubscribe, you will continue to receive non-promotional, transactional messages regarding your account and other essential services.
+                                </p>
+
+                                 
+                                  <p>
+                               <span class="d-block">Access and Update Personal Information</span>     
+                                 
+                                    You have the right to access and edit your profile information at any time. You also have the right to rectification in case your personal data is incomplete or inaccurate. To update your information, use the Personal Information section of the Parsel website. If you require assistance, please contact our Support team.
+
+                                  </p>
+                                 
+
+                                  <p>
+                                <span class="d-block">  Right to be Forgotten</span> 
+                                 
+                                    You have the right to be forgotten which means that, at any time, you can request that Parsel permanently delete all applicable data records, including your profile information, both personal and financial, along with any user-created content. In some cases, we may need to retain partial information to fulfil our legal responsibilities, or to complete ongoing financial transactions.
+                                  </p>
+                                 
+                                  
+                               <p>
+                            <span class="d-block"> Data Portability</span>  
+                                 
+                                You have the right, at any time, to request and receive the information that you have provided to Parsel. We will provide you with your information, in a machine-readable format, so that you can make use of it in other contexts, or with other service providers.
+                               </p>  
+
+                                 <p>
+                                    <span class="d-block">  Request That We Stop Using Your Information</span>   
+                                 Even if you have previously consented to our Terms of Use and Privacy Policy, you have the right, at any time, to change your mind and object to the collection, use, and processing of your personal information. Additionally, you are under no contractual obligation to continue to provide any information to Parsel. However, we require certain information in order to provide you with our services. Therefore, if you disagree with the terms of this Privacy Policy or our Terms of Use, you should stop using Parsel, and contact us so that we may delete your information.
+                                 </p>
+                             
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+
+
+        <div id="chat-circle" class="btn btn-raised">
+            <div id="chat-overlay"></div>
+            <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" style="border-radius: 0px; fill: rgb(255, 255, 255); width: 32px; height: 32px; flex-shrink: 0;"><path d="M21.133 16.933a1.4 1.4 0 11.001-2.8 1.4 1.4 0 010 2.8m-4.667 0a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8m-5.6 0a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8m18.904-3.656c-1.013-5.655-5.753-10.22-11.528-11.105-4.343-.667-8.642.627-11.807 3.547-3.168 2.917-4.763 7.043-4.38 11.318.59 6.582 6.08 11.952 12.768 12.487 1.153.095 2.303.05 3.428-.13a14.12 14.12 0 002.428-.612.59.59 0 01.364-.006l3.714 1.167c.785.246 1.588-.331 1.588-1.144l-.002-3.517c0-.17.086-.301.157-.38a14.028 14.028 0 001.58-2.147c1.705-2.862 2.29-6.14 1.69-9.478" fill="currentColor" fill-rule="nonzero"></path></svg>
+          </div>
+          
+          <div class="chat-box">
+          <div class="chat-box-header">
+           Go On
+                <div class="dot"></div> <span class="d-block ms-3"> Online</span>
+           
+        
+          <span class="chat-box-toggle">
+            <svg class="svg-inline--fa fa-xmark fa-fw" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg>
+        </span>
+          </div>
+          <div class="chat-box-body">
+          <div class="chat-box-overlay">   
+          </div>
+          <div class="chat-logs">
+           
+          </div><!--chat-log -->
+          </div>
+          <div class="chat-input">      
+          <form>
+            <input type="text" id="chat-input" placeholder="Type your message..."/>
+          <button type="submit" class="chat-submit" id="chat-submit">
+            <svg viewBox="0 0 16 16" fill="currentColor" width="16px" height="16px"><path fill="currentColor" d="M1.40926391,5.29366938 L15.6697462,0.453934265 C16.3429879,0.239515621 16.9856276,0.882771554 16.7714144,1.55665872 L11.9363152,15.8308142 C11.722102,16.5047013 10.8040452,16.6272263 10.4062206,16.0146016 L7.34603122,11.3280226 L12.057229,5.36657191 C12.2102384,5.1827845 12.0266271,4.9989971 11.8430157,5.15215327 L5.87714034,9.91898584 L1.19505066,6.85586236 C0.613614686,6.42702507 0.705420366,5.53871926 1.40926391,5.29366938 Z" transform="rotate(-45 12.3 10.382)"></path></svg>
+            </button>
+          </form>      
+          </div>
+          </div>
+
+
+
+
+          <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+          <script>
+              new WOW().init();
+          
+              function hideMenu(){
+              menuLinks.classList.remove('show_menu');
+            }
+              
+          </script>
+
+
+        <!-- Bootstrap core JS-->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/photo-gallery.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/custom.js"></script>
+
+
+    </body>
+</html>
